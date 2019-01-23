@@ -8,8 +8,149 @@
     src: url("./fonts/CircularStd-Book.otf") format("opentype");
 }
 
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
 .app {
     font-family: 'CircularStdBook', sans-serif;
+}
+
+.welcome-inner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 11em;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 16px 0;
+    pointer-events: none;
+    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
+}
+
+.welcome-title .logo {
+    width: 400px;
+    vertical-align: sub;
+}
+
+.welcome-subtitle {
+    display: table;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.45em 0.5em;
+    border: none;
+    margin: 16px auto 0 auto;
+    letter-spacing: 6px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.welcome-text {
+    margin: 24px auto 8px;
+    width: 70%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
+}
+
+.question-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    transition: all 2s;
+    border: solid #fff 1px;
+    padding: 30px 20px;
+    border-radius: 3px;    
+}
+
+.question-title{
+    font-size: 3em;
+    color: #fff;
+}
+
+.question-text{
+    font-size: 1.6em;
+    line-height: 1.4;
+    padding: 8px 0;
+    color: #fff;
+}
+
+.outside-up {
+    top: -50vh;
+    transition: all 2s;
+    animation: ease-in;
+}
+
+.outside-down {
+    top: 120vh;
+    transition: all 2s;
+    animation: ease-in;
+}
+
+@media only screen and (min-width: 719px) and (max-width: 1024px) {
+    .welcome-inner {
+        width: 80%;
+    }
+    .welcome-title {
+        font-size: 11em;
+    }
+    .welcome-subtitle {
+        font-size: 0.8em;
+    }
+    .welcome-text {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+    .welcome-inner {
+        width: 80%;
+    }
+    .welcome-title {
+        font-size: 8em;
+    }
+    .welcome-subtitle {
+        font-size: 0.65em;
+    }
+    .welcome-text {
+        width: 80%;
+    }
+}
+
+@media only screen and ( max-width: 480px) {
+    .welcome-inner {
+        width: 90%;
+    }
+    .welcome-title {
+        font-size: 6em;
+    }
+    .welcome-subtitle {
+        font-size: 1em;
+        letter-spacing: 0.2em;
+    }
+    .welcome-text {
+        width: 80%;
+        font-size: 0.8em;
+    }
+    .welcome-title .logo {
+        width: 250px;
+    }
 }
 
 .white-division {

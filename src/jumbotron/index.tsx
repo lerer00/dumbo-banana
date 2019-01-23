@@ -1,9 +1,5 @@
 import * as React from 'react';
 import './index.css';
-import { Button, IButtonState } from '../button';
-import {
-    duoStandingDesk
-} from '../img/index';
 
 var THREE = require('three');
 
@@ -13,18 +9,11 @@ export namespace Jumbotron {
     }
 
     export interface State {
-        width: number;
-        height: number;
-        start: IStartAction;
+        // empty
     }
 
     export interface Context {
         // empty
-    }
-
-    export interface IStartAction {
-        text: string;
-        status: IButtonState;
     }
 }
 
@@ -37,12 +26,6 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
         super(props, context);
 
         this.state = {
-            width: window.innerWidth / 2,
-            height: window.innerHeight / 2,
-            start: {
-                text: 'Aidez Jhonny!',
-                status: IButtonState.default
-            }
         };
     }
 
@@ -115,18 +98,6 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
         return (
             <div className='jumbotron'>
                 <canvas className='scene scene--full waves' id='scene' />
-                <div className='jumbotron-inner'>
-                    <h2 className='jumbotron-title'>
-                        <img className='logo' src={duoStandingDesk} />
-                    </h2>
-                    <h3 className='jumbotron-subtitle'>Lorem ipsum dolor sit </h3>
-                    <h4 className='jumbotron-text'>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                    <Button
-                        text={this.state.start.text}
-                        state={this.state.start.status}
-                        action={() => { console.log('Clicked...'); }}
-                    />
-                </div>
             </div>
         );
     }
