@@ -1,0 +1,25 @@
+.tile {
+    background-color: #F4F4F4;
+    border-radius: 3px;
+    text-align: center;
+    padding: 16px;
+    border: solid 1px #DBDBDB;
+}
+
+.tile .tile-inner .tile-icon {
+    margin: 24px 0px;
+    width: 30%;
+}
+
+.tile .tile-inner .tile-title {
+    padding: 8px 4px;
+    color: #595959;
+    font-size: 1.4em;
+}
+
+.tile .tile-inner .tile-description {
+    padding: 8px 4px;
+    color: #A7A7A7;
+    font-size: 1em;
+    line-height: 1.4;
+}

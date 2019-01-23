@@ -1,0 +1,15 @@
+export const duoBusinessHandShakeDeal = require('./ego/duotone/business-handshake-deal.svg');
+export const duoBusinessIdeaUser = require('./ego/duotone/business-idea-user-3.svg');
+export const duoBusinessWorkStation = require('./ego/duotone/business-work-station-2.svg');
+export const duoFire = require('./ego/duotone/fire.svg');
+export const duoLab = require('./ego/duotone/lab.svg');
+export const duoLaunch = require('./ego/duotone/launch.svg');
+export const duoMultiPlatform = require('./ego/duotone/multi-platform-2.svg');
+export const duoNetwork = require('./ego/duotone/network.svg');
+export const duoPackageTrolley = require('./ego/duotone/package-trolley-4.svg');
+export const duoProgrammingTyping = require('./ego/duotone/programming-typing.svg');
+export const duoStandingDesk = require('./ego/duotone/standing-desk.svg');
+export const duoTransferFile = require('./ego/duotone/transfer-file.svg');
+export const duoPiggyBank = require('./ego/duotone/piggy-bank.svg');
+export const duoBusinessStartupLaptop = require('./ego/duotone/business-startup-laptop.svg');
+export const duoRobot = require('./ego/duotone/robot.svg');

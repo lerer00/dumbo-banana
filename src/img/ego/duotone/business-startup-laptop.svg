@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#CCE7FF;}
+	.st2{fill:#CCE7FF;stroke:#1078FF;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#1078FF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#1078FF;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#1078FF;stroke-width:0.9847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#1078FF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#1078FF;stroke-miterlimit:10;}
+	.st8{fill:none;}
+</style>
+<g id="Duotone">
+	<polygon class="st0" points="19.5,18.5 19.5,8.5 13.3,8.5 13.5,4.5 11.5,0.5 9.5,4.5 9.8,8.5 3.5,8.5 3.5,18.5 2,23.5 21,23.5 	"/>
+	<polygon class="st1" points="9.8,9.9 7.5,11 7.5,13.5 10,12.5 	"/>
+	<polygon class="st1" points="15.5,11 13.2,9.9 13,12.5 13.1,12.5 3.5,18.5 11.2,18.5 10.5,16 11.5,14.5 12.5,16 11.8,18.5 
+		19.5,18.5 19.5,8.5 	"/>
+	<g>
+		<line class="st3" x1="11.5" y1="4.5" x2="11.5" y2="5.5"/>
+		<polyline class="st5" points="6.5,8.5 3.5,8.5 3.5,18.5 		"/>
+		<polyline class="st5" points="19.5,18.5 19.5,8.5 16.5,8.5 		"/>
+		<line class="st3" x1="10.5" y1="21.5" x2="12.5" y2="21.5"/>
+		<polyline class="st5" points="8.5,15 6,15.5 5.5,16.5 		"/>
+		<polyline class="st5" points="14.5,15 17,15.5 17.5,16.5 		"/>
+		<polygon class="st3" points="13,12.5 10,12.5 9.5,4.5 11.5,0.5 13.5,4.5 		"/>
+		<polyline class="st3" points="9.8,9.9 7.5,11 7.5,13.5 10,12.5 		"/>
+		<polyline class="st3" points="13.2,9.9 15.5,11 15.5,13.5 13,12.5 		"/>
+		<polygon class="st3" points="11.5,14.5 10.5,16 11.5,19.5 12.5,16 		"/>
+		<polyline class="st3" points="8.5,18.5 3.5,18.5 2,23.5 21,23.5 19.5,18.5 14.5,18.5 		"/>
+	</g>
+</g>
+<g id="Frames-24px">
+	<rect class="st8" width="24" height="24"/>
+</g>
+</svg>
