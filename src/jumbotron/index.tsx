@@ -120,7 +120,7 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
                         <img className='logo' src={duoStandingDesk} />
                     </h2>
                     <h3 className='jumbotron-subtitle'>Lorem ipsum dolor sit </h3>
-                    <h4 className='jumbotron-text'>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <h4 className='jumbotron-text'>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
                     <Button
                         text={this.state.start.text}
                         state={this.state.start.status}

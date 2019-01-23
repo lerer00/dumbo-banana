@@ -67,7 +67,7 @@
 	}
 	.jumbotron-text {
 		width: 70%;
-	}
+	}	
 }
 
 @media only screen and (min-width: 481px) and (max-width: 719px) {
@@ -93,10 +93,14 @@
 		font-size: 6em;
 	}
 	.jumbotron-subtitle {
-		font-size: 0.7em;
+		font-size: 1em;
 		letter-spacing: 0.2em;
 	}
 	.jumbotron-text {
 		width: 80%;
+		font-size: 0.8em;
+	}
+	.jumbotron-title .logo{
+		width: 250px;
 	}
 }
