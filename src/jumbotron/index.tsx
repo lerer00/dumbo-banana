@@ -1,5 +1,9 @@
 import * as React from 'react';
 import './index.css';
+import { Button, IButtonState } from '../button';
+import {
+    duoStandingDesk
+} from '../img/index';
 
 var THREE = require('three');
 
@@ -11,10 +15,16 @@ export namespace Jumbotron {
     export interface State {
         width: number;
         height: number;
+        start: IStartAction;
     }
 
     export interface Context {
         // empty
+    }
+
+    export interface IStartAction {
+        text: string;
+        status: IButtonState;
     }
 }
 
@@ -28,7 +38,11 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
 
         this.state = {
             width: window.innerWidth / 2,
-            height: window.innerHeight / 2
+            height: window.innerHeight / 2,
+            start: {
+                text: 'Aidez Jhonny!',
+                status: IButtonState.default
+            }
         };
     }
 
@@ -55,8 +69,8 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
         // Create particles array.
         var tmpParticles = new Array();
 
-        var spriteMap = new THREE.TextureLoader().load( './sprite.png' );
-        var spriteMaterial = new THREE.SpriteMaterial( { map: spriteMap, color: 0xffffff } );
+        var spriteMap = new THREE.TextureLoader().load('./sprite.png');
+        var spriteMaterial = new THREE.SpriteMaterial({ map: spriteMap, color: 0xffffff });
 
         // Add particles to the scene.
         var i = 0;
@@ -85,8 +99,8 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
         for (var ix = 0; ix < this.amountX; ix++) {
             for (var iy = 0; iy < this.amountY; iy++) {
                 var particle = particles[i++];
-                particle.position.y += ( Math.sin( ( ix + count ) * 0.5 ) ) + ( Math.sin( ( iy + count ) * 0.5 ) );
-                particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 3 + ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 3;
+                particle.position.y += (Math.sin((ix + count) * 0.5)) + (Math.sin((iy + count) * 0.5));
+                particle.scale.x = particle.scale.y = (Math.sin((ix + count) * 0.3) + 1) * 3 + (Math.sin((iy + count) * 0.5) + 1) * 3;
             }
         }
 
@@ -103,13 +117,15 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
                 <canvas className='scene scene--full waves' id='scene' />
                 <div className='jumbotron-inner'>
                     <h2 className='jumbotron-title'>
-                    <img className='logo' src='./latude-logo.png' />
-                    latude.
+                        <img className='logo' src={duoStandingDesk} />
                     </h2>
-                    <h3 className='jumbotron-subtitle'>Decentralized Booking Authority</h3>
-                    <h4 className='jumbotron-text'>The latude. project exist to give back to users and hotels in the accommodation industry around the world what's belongs to them. 
-                    Underneath this mission, it's a public ethereum based booking ledger that gives life to a real-time, peer-to-peer availabilities system,
-                    designed to ease interactions and remove friction for online travel agencies.</h4>
+                    <h3 className='jumbotron-subtitle'>Lorem ipsum dolor sit </h3>
+                    <h4 className='jumbotron-text'>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <Button
+                        text={this.state.start.text}
+                        state={this.state.start.status}
+                        action={() => { console.log('Clicked...'); }}
+                    />
                 </div>
             </div>
         );
