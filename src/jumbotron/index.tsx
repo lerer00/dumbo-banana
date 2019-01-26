@@ -30,7 +30,7 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
     }
 
     componentDidMount() {
-        this.init();
+        // this.init();
     }
 
     init() {
