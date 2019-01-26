@@ -18,13 +18,14 @@ body {
     font-family: 'CircularStdBook', sans-serif;
 }
 
-.welcome-inner {
+.welcome-inner, .all-done {
     position: absolute;
     top: 45%;
     left: 50%;
     width: 50%;
     height: auto;
     transform: translate(-50%, -50%);
+    transition: all 2s;
 }
 
 .welcome-title {
@@ -77,36 +78,67 @@ body {
     border: solid #fff 1px;
     padding: 30px 20px;
     border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.question-title {
-    font-size: 3em;
-    color: #fff;
+.question-inner .page-count {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    color: #D9D9D9;
 }
 
-.question-text {
+.question-inner .button {
+    margin: 8px 0;
+    display: block;
+}
+
+.question-inner .question-text-container {
+    margin-bottom: 24px;
+}
+
+.question-inner .question-text-container .question-image {
+    width: 10%;
+    float: left;
+}
+
+.question-inner .question-text-container .question-image img {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.question-inner .question-text-container p {
+    display: inline-block;
+    margin-left: 8px;
+    width: 85%;
     font-size: 1.6em;
     line-height: 1.4;
-    padding: 8px 0;
-    color: #fff;
+    color: #595959;
 }
 
-.question-answered {
+.question-inner .question-buttons {
+    margin-left: 10%;
+}
+
+.outside-viewport-up {
     top: -50vh;
     transition: all 2s;
     animation: ease-in;
 }
 
-.outside-up {
-    top: -50vh;
+.outside-viewport-down {
+    top: 160vh;
     transition: all 2s;
     animation: ease-in;
 }
 
-.outside-down {
-    top: 120vh;
-    transition: all 2s;
-    animation: ease-in;
+.question-inner .done-image {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 719px) and (max-width: 1024px) {
