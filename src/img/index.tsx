@@ -14,3 +14,5 @@ export const duoPiggyBank = require('./ego/duotone/piggy-bank.svg');
 export const duoBusinessStartupLaptop = require('./ego/duotone/business-startup-laptop.svg');
 export const duoRobot = require('./ego/duotone/robot.svg');
 export const duoIdea = require('./ego/duotone/user-chat-idea.svg');
+export const duoCheckHexagon = require('./ego/duotone/check-hexagon.svg');
+export const duoCloseHexagon = require('./ego/duotone/close-hexagon.svg');
