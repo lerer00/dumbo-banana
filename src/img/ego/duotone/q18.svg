@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>movie-users</title>
+  <g id="Duotone">
+    <rect x="0.5" y="0.5" width="22" height="12" fill="#fff"/>
+    <polygon points="6.5 23.5 6.5 21 3.5 20 0.5 21 0.5 23.5 6.5 23.5" fill="#fff"/>
+    <polygon points="14.5 23.5 14.5 21 11.5 20 8.5 21 8.5 23.5 14.5 23.5" fill="#fff"/>
+    <polygon points="22.5 23.5 22.5 21 19.5 20 16.5 21 16.5 23.5 22.5 23.5" fill="#fff"/>
+    <polygon points="21.5 17.75 19.5 19 17.5 17.75 17.5 15.75 19.5 14.5 21.5 15.75 21.5 17.75" fill="#fff"/>
+    <polygon points="13.5 17.75 11.5 19 9.5 17.75 9.5 15.75 11.5 14.5 13.5 15.75 13.5 17.75" fill="#fff"/>
+    <polygon points="5.5 17.75 3.5 19 1.5 17.75 1.5 15.75 3.5 14.5 5.5 15.75 5.5 17.75" fill="#fff"/>
+    <polygon points="3.5 20 3.5 23.5 6.5 23.5 6.5 21 3.5 20" fill="#cce7ff"/>
+    <polygon points="3.5 14.5 3.5 19 5.5 17.75 5.5 15.75 3.5 14.5" fill="#cce7ff"/>
+    <polygon points="11.5 20 11.5 23.5 14.5 23.5 14.5 21 11.5 20" fill="#cce7ff"/>
+    <polygon points="11.5 14.5 11.5 19 13.5 17.75 13.5 15.75 11.5 14.5" fill="#cce7ff"/>
+    <polygon points="19.5 20 19.5 23.5 22.5 23.5 22.5 21 19.5 20" fill="#cce7ff"/>
+    <polygon points="19.5 14.5 19.5 19 21.5 17.75 21.5 15.75 19.5 14.5" fill="#cce7ff"/>
+    <polygon points="12.568 5.917 13.5 6.5 9.5 9 9.5 7.591 0.5 12.5 22.5 12.5 22.5 0.5 12.568 5.917" fill="#cce7ff"/>
+    <polygon points="9.5 9 9.5 4 13.5 6.5 9.5 9" fill="none" stroke="#1078ff" stroke-linejoin="round"/>
+    <rect x="0.5" y="0.5" width="22" height="12" fill="none" stroke="#1078ff" stroke-linejoin="round"/>
+    <polygon points="6.5 23.5 6.5 21 3.5 20 0.5 21 0.5 23.5 6.5 23.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="14.5 23.5 14.5 21 11.5 20 8.5 21 8.5 23.5 14.5 23.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="22.5 23.5 22.5 21 19.5 20 16.5 21 16.5 23.5 22.5 23.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="21.5 17.75 19.5 19 17.5 17.75 17.5 15.75 19.5 14.5 21.5 15.75 21.5 17.75" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="13.5 17.75 11.5 19 9.5 17.75 9.5 15.75 11.5 14.5 13.5 15.75 13.5 17.75" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="5.5 17.75 3.5 19 1.5 17.75 1.5 15.75 3.5 14.5 5.5 15.75 5.5 17.75" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="Frames-24px">
+    <rect width="24" height="24" fill="none"/>
+  </g>
+</svg>

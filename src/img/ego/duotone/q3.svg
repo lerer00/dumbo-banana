@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>headphone</title>
+  <g id="Icons-DuoTone">
+    <g>
+      <polygon points="3.5 9 3.5 10.5 1.5 10.5 0.5 13 1.5 15.5 3.5 15.5 3.5 17 5.5 18 7.5 17 7.5 9 5.5 8 3.5 9" fill="#fff"/>
+      <polygon points="22.5 10.5 20.5 10.5 20.5 9 18.5 8 16.5 9 16.5 17 18.5 18 20.5 17 20.5 15.5 22.5 15.5 23.5 13 22.5 10.5" fill="#fff"/>
+    </g>
+    <polygon points="7.5 13 7.5 17 5.5 18 3.5 17 3.5 13 7.5 13" fill="#cce7ff"/>
+    <polygon points="0.5 13 1.5 15.5 3.5 15.5 3.5 13 0.5 13" fill="#cce7ff"/>
+    <polygon points="16.5 13 16.5 17 18.5 18 20.5 17 20.5 13 16.5 13" fill="#cce7ff"/>
+    <polygon points="23.5 13 22.5 15.5 20.5 15.5 20.5 13 23.5 13" fill="#cce7ff"/>
+    <rect x="10.5" y="21.5" width="4" height="2" fill="#cce7ff"/>
+    <polygon points="7.5 17 5.5 18 3.5 17 3.5 9 5.5 8 7.5 9 7.5 17" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="20.5 17 18.5 18 16.5 17 16.5 9 18.5 8 20.5 9 20.5 17" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="3.5 15.5 1.5 15.5 0.5 13 1.5 10.5 3.5 10.5 3.5 15.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="20.5 15.5 22.5 15.5 23.5 13 22.5 10.5 20.5 10.5 20.5 15.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="18.5 8 18.5 4.5 12 1.5 5.5 4.5 5.5 8" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="18.5 18 18.5 20 16.5 22.5 14.5 22.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="10.5" y="21.5" width="4" height="2" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="Frames-24px">
+    <rect width="24" height="24" fill="none"/>
+  </g>
+</svg>

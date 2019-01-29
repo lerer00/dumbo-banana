@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>eco-globe-1</title>
+  <g id="Duotone">
+    <polygon points="8.5 18.5 8.5 14.5 7.5 14.5 5 18.5 3.5 18.5 3.5 17.5 0.5 17.5 0.5 23.5 3.5 23.5 3.5 22.5 9 22.5 17 20.5 18.5 18.5 8.5 18.5" fill="#fff"/>
+    <polyline points="19.501 16.566 21 15.99 23.5 9.494 21 2.998 14.5 0.5 8 2.998 5.5 9.494 6.653 12.489" fill="#fff"/>
+    <rect x="0.5" y="19.5" width="3" height="4" fill="#cce7ff"/>
+    <polygon points="21.963 5.5 20 5.5 17 8 17 9.5 18 10.5 17.5 14 15 16 13 13.5 13 11.5 9.5 10 9.5 7.5 11.5 6 13 7 15.5 6.5 15.5 4.5 14.5 3 16.704 1.347 21 2.998 21.963 5.5" fill="#cce7ff"/>
+    <polyline points="3.5 22.489 9 22.489 17 20.489 18.5 18.489 8.5 18.489 8.5 14.489 7.5 14.489 5 18.489 3.5 18.489" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="0.5" y="17.489" width="3" height="6" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="19.501 16.566 21 15.99 23.5 9.494 21 2.998 14.5 0.5 8 2.998 5.5 9.494 6.653 12.489" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="21.963 5.5 20 5.5 17 8 17 9.5 18 10.5 17.5 14 15 16 13 13.5 13 11.5 9.5 10 9.5 7.5 11.5 6 13 7 15.5 6.5 15.5 4.5 14.5 3 16.704 1.347 21 2.998 21.963 5.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="Frames-24px">
+    <rect width="24" height="24" fill="none"/>
+  </g>
+</svg>

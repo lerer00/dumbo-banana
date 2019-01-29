@@ -2,8 +2,12 @@ import * as React from 'react';
 import { Jumbotron } from './jumbotron';
 import { Button, IButtonState } from './button';
 import {
-  duoStandingDesk, duoPiggyBank, duoLaunch,
-  duoCheckHexagon, duoCloseHexagon, duoBusinessWorkStation
+  duoStandingDesk, duoLaunch,
+  duoCheckHexagon, duoCloseHexagon,
+  q1, 
+  // q2,
+  // q3, q4, q5, q6, q7, q8, q9, q10, q11, q12,
+  // q13, q14, q15, q16, q17, q18, q19, q20
 } from './img/index';
 import './App.css';
 
@@ -17,10 +21,7 @@ export namespace App {
     done: IDoneAction;
     welcomeVisible: boolean;
     doneVisible: boolean;
-    q1Started: boolean;
-    q1Answered: boolean;
-    q2Started: boolean;
-    q2Answered: boolean;
+    questions: Array<IQuestion>;
     overlay: IOverlayAction;
   }
 
@@ -45,6 +46,22 @@ export namespace App {
     text: string;
     ok: Function;
   }
+
+  export interface IQuestion {
+    id: string;
+    text: string;
+    visible: boolean;
+    answered: boolean;
+    icon: any;
+    answers: Array<IAnswer>;
+  }
+
+  export interface IAnswer {
+    id: string;
+    text: string;
+    result: QuestionResult;
+    action: Function;
+  }
 }
 
 export enum QuestionResult {
@@ -67,11 +84,35 @@ class App extends React.Component<App.Props, App.State> {
       },
       welcomeVisible: true,
       doneVisible: false,
-      q1Started: false,
-      q1Answered: false,
-      q2Started: false,
-      q2Answered: false,
-
+      questions: [
+        {
+          id: '1',
+          text: 'Balthazar s’est inscrit sur le jeu serpentsdelave.com. Son mot de passe a été piraté puisqu’il avait utilisé sa date de naissance. Aide-le à reprendre le contrôle avec un de ces mots de passe.',
+          visible: false,
+          answered: false,
+          icon: q1,
+          answers: [
+            {
+              id: '1',
+              text: 'Loki234',
+              action: () => { this.setState({}); },
+              result: QuestionResult.BAD
+            },
+            {
+              id: '2',
+              text: '2002balth',
+              action: () => { this.setState({}); },
+              result: QuestionResult.BAD
+            },
+            {
+              id: '3',
+              text: 'E!5F3$45',
+              action: () => { this.endTest(1); },
+              result: QuestionResult.GOOD
+            }
+          ]
+        }
+      ],
       overlay: {
         visible: false,
         image: undefined,
@@ -114,6 +155,34 @@ class App extends React.Component<App.Props, App.State> {
     }
   }
 
+  startTest() {
+    var questions = this.state.questions;
+    questions[0].visible = true;
+
+    this.setState({
+      welcomeVisible: false, questions: questions
+    });
+  }
+
+  gotoNextQuestion(currentQuestionIndex: number) {
+    var questions = this.state.questions;
+    questions[currentQuestionIndex - 1].answered = true;
+    questions[currentQuestionIndex].visible = true;
+
+    this.setState({
+      questions: questions
+    });
+  }
+
+  endTest(currentQuestionIndex: number) {
+    var questions = this.state.questions;
+    questions[currentQuestionIndex - 1].answered = true;
+
+    this.setState({
+      doneVisible: true, questions: questions
+    });
+  }
+
   hideOverlay() {
     this.setState({
       overlay: {
@@ -138,10 +207,35 @@ class App extends React.Component<App.Props, App.State> {
       },
       welcomeVisible: true,
       doneVisible: false,
-      q1Started: false,
-      q1Answered: false,
-      q2Started: false,
-      q2Answered: false,
+      questions: [
+        {
+          id: '1',
+          text: 'Balthazar s’est inscrit sur le jeu serpentsdelave.com. Son mot de passe a été piraté puisqu’il avait utilisé sa date de naissance. Aide-le à reprendre le contrôle avec un de ces mots de passe.',
+          visible: false,
+          answered: false,
+          icon: q1,
+          answers: [
+            {
+              id: '1',
+              text: 'Loki234',
+              action: () => { this.setState({}); },
+              result: QuestionResult.BAD
+            },
+            {
+              id: '2',
+              text: '2002balth',
+              action: () => { this.setState({}); },
+              result: QuestionResult.BAD
+            },
+            {
+              id: '3',
+              text: 'E!5F3$45',
+              action: () => { this.endTest(1); },
+              result: QuestionResult.GOOD
+            }
+          ]
+        }
+      ],
       overlay: {
         visible: false,
         image: undefined,
@@ -158,6 +252,7 @@ class App extends React.Component<App.Props, App.State> {
         <div>
           <Jumbotron />
           <div className='content'>
+            {/* BEGIN */}
             <div className={this.state.welcomeVisible ? 'welcome-inner' : 'welcome-inner outside-viewport-up'}>
               <h2 className='welcome-title'>
                 <img className='logo' src={duoStandingDesk} />
@@ -167,63 +262,29 @@ class App extends React.Component<App.Props, App.State> {
               <Button
                 text={this.state.start.text}
                 state={this.state.start.status}
-                action={() => this.setState({ welcomeVisible: false, q1Started: true })}
+                action={() => { this.startTest(); }}
               />
             </div>
-            {/* Question 1 */}
-            <div className={`question-inner ${this.state.q1Started ? '' : 'outside-viewport-down'} ${this.state.q1Answered ? 'outside-viewport-up' : ''}`}>
-              <div className='question-text-container'>
-                <div className='question-image'>
-                  <img src={duoPiggyBank} />
+
+            {/* QUESTIONS */}
+            {this.state.questions.map((question) =>
+              <div key={question.id} className={`question-inner ${question.visible ? '' : 'outside-viewport-down'} ${question.answered ? 'outside-viewport-up' : ''}`}>
+                <div className='question-text-container'>
+                  <div className='question-image'>
+                    <img src={question.icon} />
+                  </div>
+                  <p>{question.text}</p>
                 </div>
-                <p>Balthazar s’est inscrit sur le jeu serpentsdelave.com. Son mot de passe a été piraté puisqu’il avait utilisé sa date de naissance. Aide-le à reprendre le contrôle avec un de ces mots de passe.</p>
-              </div>
-              <div className='question-buttons'>
-                <Button
-                  text={'Loki234'}
-                  state={IButtonState.default}
-                  action={() => this.showOverlay(QuestionResult.BAD, () => { this.setState({}); })}
-                />
-                <Button
-                  text={'2002balth'}
-                  state={IButtonState.default}
-                  action={() => this.showOverlay(QuestionResult.BAD, () => { this.setState({}); })}
-                />
-                <Button
-                  text={'E!5F3$45'}
-                  state={IButtonState.default}
-                  action={() => this.showOverlay(QuestionResult.GOOD, () => { this.setState({ q1Answered: true, q2Started: true }); })}
-                />
-              </div>
-              <p className='page-count'>1/2</p>
-            </div>
-            {/* Question 2 */}
-            <div className={`question-inner ${this.state.q2Started ? '' : 'outside-viewport-down'} ${this.state.q2Answered ? 'outside-viewport-up' : ''}`}>
-              <div className='question-text-container'>
-                <div className='question-image'>
-                  <img src={duoBusinessWorkStation} />
+                <div className='question-buttons'>
+                  {question.answers.map((answer) =>
+                    <Button key={answer.id} text={answer.text} state={IButtonState.default} action={() => this.showOverlay(answer.result, answer.action)} />
+                  )}
                 </div>
-                <p>Pour obtenir plus de points à son jeu Balthazar a inscrit plusieurs informations afin de participer à un concours. Tu as le droit d’effacer une de ses réponses laquelle choisis tu?</p>
+                <p className='page-count'>{question.id}/{this.state.questions.length}</p>
               </div>
-              <div className='question-buttons'>
-                <Button
-                  text={'Loki -> le nom de son chien'}
-                  state={IButtonState.default}
-                  action={() => this.showOverlay(QuestionResult.BAD, () => { this.setState({}); })}
-                />
-                <Button
-                  text={'Loin là-bas -> le nom de son école '}
-                  state={IButtonState.default}
-                  action={() => this.showOverlay(QuestionResult.GOOD, () => { this.setState({ q2Answered: true, doneVisible: true }); })}
-                />
-                <Button
-                  text={'Gribouille -> son super héros préféré'}
-                  state={IButtonState.default}
-                  action={() => this.showOverlay(QuestionResult.BAD, () => { this.setState({}); })}
-                />
-              </div>
-              <p className='page-count'>1/2</p>
-            </div>
+            )}
+
+            {/* END */}
             <div className={this.state.doneVisible ? 'welcome-inner' : 'welcome-inner outside-viewport-down'}>
               <h2 className='welcome-title'>
                 <img className='logo' src={duoLaunch} />
@@ -236,6 +297,8 @@ class App extends React.Component<App.Props, App.State> {
                 action={() => { this.reset(); }}
               />
             </div>
+            
+            {/* OVERLAY */}
             <div className={`overlay ${this.state.overlay.visible ? '' : 'overlay-hidden'}`}>
               <div className='overlay-inner'>
                 <h2 className='overlay-image'>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>shield-4</title>
+  <g id="Duotone">
+    <polygon points="4.669 18.145 2.732 5.382 11.352 2.602 20.268 5.382 18.034 18.145 11.352 21.29 4.669 18.145" fill="#fff"/>
+    <path d="M11.352.5.5,4,2.852,19.5l8.5,4,8.5-4L22.5,4Zm6.683,17.645L11.352,21.29,4.669,18.145,2.732,5.382,11.352,2.6l8.916,2.78Z" fill="#cce7ff"/>
+    <polygon points="11.352 2.602 8.138 3.638 18.721 14.221 19.391 10.391 11.721 2.721 11.352 2.602" fill="#cce7ff"/>
+    <g>
+      <polygon points="4.669 18.145 11.352 21.29 11.989 20.99 3.868 12.869 4.669 18.145" fill="#cce7ff"/>
+      <polygon points="4.735 4.736 2.732 5.382 3.064 7.564 15.05 19.55 18.034 18.145 18.049 18.049 4.735 4.736" fill="#cce7ff"/>
+    </g>
+    <g>
+      <polygon points="11.351 0.5 22.5 4 19.851 19.5 11.351 23.5 2.851 19.5 0.5 4 11.351 0.5" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+      <polygon points="4.669 18.145 2.732 5.382 11.352 2.602 20.268 5.382 18.034 18.145 11.352 21.29 4.669 18.145" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="11.721" y1="2.721" x2="19.391" y2="10.391" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="8.138" y1="3.638" x2="18.721" y2="14.221" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="4.735" y1="4.736" x2="18.049" y2="18.049" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="3.064" y1="7.564" x2="15.049" y2="19.549" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="3.868" y1="12.869" x2="11.989" y2="20.99" fill="none" stroke="#1078ff" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g id="Frames-24px">
+    <rect width="24" height="24" fill="none"/>
+  </g>
+</svg>
