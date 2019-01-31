@@ -742,8 +742,8 @@ class App extends React.Component<App.Props, App.State> {
               <h2 className='welcome-title'>
                 <img className='logo' src={duoStandingDesk} />
               </h2>
-              <h3 className='welcome-subtitle'>Lorem ipsum dolor sitee </h3>
-              <h4 className='welcome-text'>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+              <h3 className='welcome-subtitle'>À la rescousse de Balthazar! 😨</h3>
+              <h4 className='welcome-text'>Cher élève de la classe de Madame X je me nomme Balthazar et j’ai grandement besoin de votre aide. J’ai été un peu trop téméraire et j’ai décider de me lance dans les Internet sans vraiment avoir de connaissances sur le sujet. Au travers les médias sociaux, les moteurs de recherche ainsi que dans les jeux en ligne je me suis égaré. N’ayant pas été prudent je crains que je sois prisonnier de ces technologies. Si seulement j’avais des amis qui pourraient m’aider à réparer mes erreurs pour que je puisse sortir de cet endroit. J’aimerais tant pouvoir revoir mes parents et mon chien Loki. Pshhhhhhhhhh… ohhh non les interférences !!! pshhhhhhhh… Aidez-moi svp. Je serai bien vous récompensez afin que vous ne soyez pas dans la même situation que moi. Pshhhhh adieu classe de Madame X que les « likes » soient avec vous.</h4>
               <Button
                 text={this.state.start.text}
                 state={this.state.start.status}
@@ -774,8 +774,8 @@ class App extends React.Component<App.Props, App.State> {
               <h2 className='welcome-title'>
                 <img className='logo' src={duoLaunch} />
               </h2>
-              <h3 className='welcome-subtitle'>Lorem ipsum dolor sitee </h3>
-              <h4 className='welcome-text'>Lorem ipsum dolor sit , consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+              <h3 className='welcome-subtitle'>Félicitation 🎉</h3>
+              <h4 className='welcome-text'>Tu as réussis à compléter le parcours maintenant tu es un pro de la sécurité des médias sociaux et d’Internet. N’oublie jamais de demander à un adulte en cas de doute, car les conséquences peuvent être importantes et dangereuses. Au revoir classe de Madame X</h4>
               <Button
                 text={this.state.done.text}
                 state={this.state.done.status}
