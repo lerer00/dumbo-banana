@@ -616,7 +616,7 @@ class App extends React.Component<App.Props, App.State> {
 
     this.state = {
       start: {
-        text: 'Aidez Jhonny!',
+        text: 'Aidez Balthazar!',
         status: IButtonState.default
       },
       done: {
