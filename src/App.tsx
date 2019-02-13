@@ -125,7 +125,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '3',
-      text: 'La dernière fois que la boîte courriel de Balthazar a été ouverte, ces messages ont été ouverts. Selon toi lequel de ses messages est en partie responsable des malheurs qui lui arrive?',
+      text: 'La dernière fois que la boîte courriel de Balthazar a été ouverte, ces messages ont été ouverts. Selon toi lequel de ces messages est en partie responsable des malheurs qui lui arrivent?',
       visible: false,
       answered: false,
       icon: q3,
@@ -144,7 +144,7 @@ class App extends React.Component<App.Props, App.State> {
         },
         {
           id: '3',
-          text: 'Obtenez 2 jeux gratuits en cliquant ici ',
+          text: 'Obtenez 2 jeux gratuits en cliquant ici',
           action: () => { this.gotoNextQuestion(3); },
           result: QuestionResult.GOOD
         }
@@ -171,7 +171,7 @@ class App extends React.Component<App.Props, App.State> {
         },
         {
           id: '3',
-          text: 'Mémoriser automatiquement sont mot de passe pour ne pas devoir l’inscrire à nouveau',
+          text: 'Mémoriser automatiquement son mot de passe pour ne pas devoir l’inscrire à nouveau',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
@@ -179,7 +179,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '5',
-      text: 'Plusieurs applications semblent avoir été télécharger récréments laquelle peut avoir causée des ennuis à notre compagnon?',
+      text: 'Plusieurs applications semblent avoir été téléchargées récemment, laquelle peut avoir causé des ennuis à notre compagnon?',
       visible: false,
       answered: false,
       icon: q5,
@@ -206,7 +206,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '6',
-      text: 'Une transaction bancaire a été effectuée récemment qu’elle indice dans l’adresse de l’institution bancaire peut t’informé qu’il s’agit d’un site sécuritaire?',
+      text: 'Une transaction bancaire a été effectuée récemment, quel indice dans l’adresse de l’institution bancaire peut t’informer qu’il s’agit d’un site sécuritaire?',
       visible: false,
       answered: false,
       icon: q6,
@@ -233,7 +233,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '7',
-      text: 'Balthazar avait de la difficulté à ce connecté sur un site Internet de l’école. Il a donc appelé Jean un de ses amis pour lui demander de l’aide. Jean lui explique que sans son mot de passe il ne peut rien faire pour l’aider. Quel est ta solution? ',
+      text: 'Balthazar avait de la difficulté à se connecter sur un site Internet de l’école. Il a donc appelé Jean un de ses amis pour lui demander de l’aide. Jean lui explique que sans son mot de passe il ne peut rien faire pour l’aider. Quelle est ta solution?',
       visible: false,
       answered: false,
       icon: q7,
@@ -246,7 +246,7 @@ class App extends React.Component<App.Props, App.State> {
         },
         {
           id: '2',
-          text: 'Lui demander son mot de passe en échange du tiens',
+          text: 'Lui demander son mot de passe en échange du tien',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         },
@@ -287,7 +287,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '9',
-      text: 'Plusieurs publicités apparaissent sur l’ordinateur de même que des messages d’erreur mentionnant que l’ordinateur est lent et qu’il faut le réparer. Qu’est ce que cela peut vouloir dire? ',
+      text: 'Plusieurs publicités apparaissent sur l’ordinateur de même que des messages d’erreur mentionnant que l’ordinateur est lent et qu’il faut le réparer. Qu’est-ce que cela peut vouloir dire?',
       visible: false,
       answered: false,
       icon: q9,
@@ -300,7 +300,7 @@ class App extends React.Component<App.Props, App.State> {
         },
         {
           id: '2',
-          text: 'Que tu as peut-être été pirater ou que tu pourrais l’être',
+          text: 'Que tu as peut-être été piraté ou que tu pourrais l’être',
           action: () => { this.gotoNextQuestion(9); },
           result: QuestionResult.GOOD
         },
@@ -314,7 +314,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '10',
-      text: 'Balthazar adore que tout le monde suivre ce qu’il fait sur Facebook selon toi est-ce sécuritaire?',
+      text: 'Balthazar adore que tout le monde suive ce qu’il fait sur Facebook. Selon toi est-ce sécuritaire?',
       visible: false,
       answered: false,
       icon: q10,
@@ -341,14 +341,14 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '11',
-      text: 'Balthazar a reçu un message de sa banque l’informant qu’un retrait a été effectué par erreur et qu’il peut récupérer son argent avec une compensation immédiatement. Qu’est ce qu’il aurait dû faire ?',
+      text: 'Balthazar a reçu un message de sa banque l’informant qu’un retrait a été effectué par erreur et qu’il peut récupérer son argent avec une compensation immédiatement. Qu’est-ce qu’il aurait dû faire?',
       visible: false,
       answered: false,
       icon: q11,
       answers: [
         {
           id: '1',
-          text: 'Appeler Jean et lui dire qu’il allait acheter le nouveau jeux vidéo du mois',
+          text: 'Appeler Jean et lui dire qu’il allait acheter le nouveau jeu vidéo du mois',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         },
@@ -360,7 +360,7 @@ class App extends React.Component<App.Props, App.State> {
         },
         {
           id: '3',
-          text: 'Se dépêcher de remplir les informations afin de profiter de l’erreur de la banque',
+          text: 'Se dépêcher à remplir les informations afin de profiter de l’erreur de la banque',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
@@ -395,7 +395,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '13',
-      text: 'Vous remarquer que cracheurdefeu.com est un site de jeu fréquemment consulté par Balthazar. 5$ par mois sont nécessaire pour jouer au jeu. Vous voyez que le paiement est fait automatiquement à chaque mois dans le compte des parents de Balthazar. Que pourriez-vous lui suggérer pour éviter les problèmes?',
+      text: 'Vous remarquez que cracheurdefeu.com est un site de jeu fréquemment consulté par Balthazar. 5$ par mois sont nécessaires pour jouer au jeu. Vous voyez que le paiement est fait automatiquement à chaque mois dans le compte des parents de Balthazar. Que pourriez-vous lui suggérer pour éviter les problèmes?',
       visible: false,
       answered: false,
       icon: q13,
@@ -435,7 +435,7 @@ class App extends React.Component<App.Props, App.State> {
         },
         {
           id: '2',
-          text: 'Une clé USB crypter',
+          text: 'Une clé USB cryptée',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         },
@@ -476,7 +476,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '16',
-      text: 'Pour éviter que les transactions en ligne effectuées par Balthazar ne soient retracer que peux-tu faire?',
+      text: 'Pour éviter que les transactions en ligne effectuées par Balthazar ne soient retracées que peux-tu faire?',
       visible: false,
       answered: false,
       icon: q16,
@@ -503,7 +503,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '17',
-      text: 'Vous venez de trouver une chaîne de message à laquelle notre ami a participer. Que faire?',
+      text: 'Vous venez de trouver une chaîne de message à laquelle notre ami a participé. Que faire?',
       visible: false,
       answered: false,
       icon: q17,
@@ -530,14 +530,14 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '18',
-      text: 'Un message de YouTube vient d’apparaitre : Souhaitez vous poursuivre le téléchargement de votre vidéo sur votre page? Vos 10 000 abonnées vous attendre! Ne vous souvenant plus ce qu’il y a sur la vidéo que faites-vous?',
+      text: 'Un message de YouTube vient d’apparaitre : Souhaitez vous poursuivre le téléchargement de votre vidéo sur votre page? Vos 10 000 abonnées vous attendent! Ne vous souvenant plus de ce qu’il y a sur la vidéo que faites-vous?',
       visible: false,
       answered: false,
       icon: q18,
       answers: [
         {
           id: '1',
-          text: 'Vite on publie 10 000 abonnés je vais être célèbre',
+          text: 'Vite on publie, 10 000 abonnés je vais être célèbre',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         },
@@ -564,7 +564,7 @@ class App extends React.Component<App.Props, App.State> {
       answers: [
         {
           id: '1',
-          text: 'Je fais comme si de rien étais cela ne me regarde pas',
+          text: 'Je fais comme si rien n’était, cela ne me regarde pas',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         },
@@ -584,7 +584,7 @@ class App extends React.Component<App.Props, App.State> {
     },
     {
       id: '20',
-      text: 'Je suis enfin libre. Tu es le meilleur comme promis je vais te remercier! Rejoins-moi dans la cour d’école après les cours mon ami je t’attendrai avec ta surprise.',
+      text: 'Je suis enfin libre. Tu es le meilleur, comme promis je vais te remercier! Rejoins-moi dans la cour d’école après les cours, mon ami, je t’attendrai avec ta surprise.',
       visible: false,
       answered: false,
       icon: q20,
@@ -775,14 +775,14 @@ class App extends React.Component<App.Props, App.State> {
                 <img className='logo' src={duoLaunch} />
               </h2>
               <h3 className='welcome-subtitle'>Félicitation 🎉</h3>
-              <h4 className='welcome-text'>Tu as réussis à compléter le parcours maintenant tu es un pro de la sécurité des médias sociaux et d’Internet. N’oublie jamais de demander à un adulte en cas de doute, car les conséquences peuvent être importantes et dangereuses. Au revoir classe de Madame X</h4>
+              <h4 className='welcome-text'>Félicitation tu as réussis à compléter le parcours maintenant tu es un pro de la sécurité des médias sociaux et d’Internet. N’oublie jamais de demander à un adulte en cas de doute, car les conséquences peuvent être importantes et dangereuses.<br /><br />Au revoir classe de Madame X</h4>
               <Button
                 text={this.state.done.text}
                 state={this.state.done.status}
                 action={() => { this.reset(); }}
               />
             </div>
-            
+
             {/* OVERLAY */}
             <div className={`overlay ${this.state.overlay.visible ? '' : 'overlay-hidden'}`}>
               <div className='overlay-inner'>
