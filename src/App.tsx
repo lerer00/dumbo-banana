@@ -4,7 +4,8 @@ import { Button, IButtonState } from './button';
 import {
   duoStandingDesk, duoLaunch,
   duoCheckHexagon, duoCloseHexagon,
-  q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12,
+  q1, q2, q3,
+  q4, q5, q6, q7, q8, q9, q10, q11, q12,
   q13, q14, q15, q16, q17, q18, q19, q20
 } from './img/index';
 import './App.css';
@@ -52,6 +53,8 @@ export namespace App {
     answered: boolean;
     icon: any;
     answers: Array<IAnswer>;
+    good: string;
+    bad: string;
   }
 
   export interface IAnswer {
@@ -94,7 +97,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.gotoNextQuestion(1); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Bravo!!! une combinaison de lettres, de chiffres et de symboles sont la meilleure solution pour ne pas se faire pirater son mot de passe.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '2',
@@ -121,7 +126,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Bravo!!! Le nom de son école est l’information la plus à risque dans la situation. Cependant, avant de donner quoi que se soit comme information demande à un adulte. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '3',
@@ -148,7 +155,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.gotoNextQuestion(3); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Super!!! Lorsque tu ne connais pas la provenance d’un courriel ou que le nom te parait douteux, tu ne devrais pas l’ouvrir.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '4',
@@ -175,7 +184,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Bravo!!! La vérification en deux étapes est le meilleur moyen pour sécuriser ses comptes en ligne et éviter de se faire pirater. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '5',
@@ -202,7 +213,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Félicitation!!! Le mot gratuit associé à une application est souvent mauvais signe méfie-toi.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '6',
@@ -229,7 +242,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.gotoNextQuestion(6); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Bien joué!!! Le s veut dire sécurisé. Lorsqu’il est inscrit https devant l’adresse, le site est reconnu comme étant plus sécuritaire. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '7',
@@ -255,8 +270,10 @@ class App extends React.Component<App.Props, App.State> {
           text: 'Trouver une autre solution pour accéder au site',
           action: () => { this.gotoNextQuestion(7); },
           result: QuestionResult.GOOD
-        }
-      ]
+        },
+      ],
+      good: 'Excellent!!! Même s’il s’agit de ton meilleur ou de ta meilleure ami (e) du monde entier, ton mot de passe est personnel tu ne dois pas le divulguer à tes amis. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '8',
@@ -282,8 +299,10 @@ class App extends React.Component<App.Props, App.State> {
           text: 'Un fireball',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
-        }
-      ]
+        },
+      ],
+      good: 'Génial!!! Un pare-feu ou un firewall en anglais te permet de surveiller et de contrôler les applications de ton ordinateur ainsi que les flux de données. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '9',
@@ -309,8 +328,10 @@ class App extends React.Component<App.Props, App.State> {
           text: 'Que tu es dû pour magasiner avec toutes ces publicités',
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
-        }
-      ]
+        },
+      ],
+      good: 'Super!!! Plusieurs « pops up » sont souvent mauvais signes. Demande à un adulte de regarder avec toi si l’ordinateur est bien protégé. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '10',
@@ -337,7 +358,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Effectivement!!! Il faut absolument modifier les paramètres de son compte pour que seuls les amis puissent voir les publications. Malgré cela, il est important de bien réfléchir avant de publier sur les médias sociaux. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '11',
@@ -364,7 +387,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Bravo! En cas de doutes les adultes peuvent toujours t’aider',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '12',
@@ -391,7 +416,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Bravo!!! Les mises à jour sont un moyen rapide et efficace pour s’assurer de la qualité de ceux-ci. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '13',
@@ -417,8 +444,10 @@ class App extends React.Component<App.Props, App.State> {
           text: 'De payer avec une carte cadeau',
           action: () => { this.gotoNextQuestion(13); },
           result: QuestionResult.GOOD
-        }
-      ]
+        },
+      ],
+      good: 'Félicitation!!! Les cartes cadeau sont un bon moyen de ne pas se faire arnaquer avec les paiements en ligne ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '14',
@@ -445,7 +474,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.gotoNextQuestion(14); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Super!!! Un logiciel Antivirus est indispensable pour protéger son ordinateur. Il en existe même des gratuits, il n’y a pas d’excuses pour pas en avoir.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '15',
@@ -472,7 +503,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Bravo!!! Les paramètres de confidentialité sont la clé pour s’assurer d’être sécuritaire sur les médias sociaux. Demande l’aide d’un adulte pour t’aider à bien les modifier. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '16',
@@ -499,7 +532,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.gotoNextQuestion(16); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Excellent!!! Supprimer l’historique n’est pas suffisant tu dois t’assurer de vider la cache (fichiers Internet temporaires). Si Balthazar suit les conseils que tu as appris il n’aura plus de problèmes et sera cyber futé comme toi.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '17',
@@ -526,7 +561,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Bien joué!!! Avant de supprimer un message du genre regarde la source il se peut que ce soit une véritable chaîne de message et que celle-ci soit intéressante. La clé est de savoir d’où elle provient. Un adulte peut t’aider en cas de doute.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '18',
@@ -553,7 +590,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.setState({}); },
           result: QuestionResult.BAD
         }
-      ]
+      ],
+      good: 'Génial!!! Dès qu’une autre personne a vu ta vidéo, il est possible qu’elle soit enregistrée à vie. Avant de partager pense à deux fois, car souvent c’est pour la vie. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '19',
@@ -580,7 +619,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.gotoNextQuestion(19); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Exactement!!! Les adultes t’aideront à juger de ce qu’il faut faire par la suite. N’hésite pas à leur demander conseils, ils sont là pour t’aider. ',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     },
     {
       id: '20',
@@ -607,7 +648,9 @@ class App extends React.Component<App.Props, App.State> {
           action: () => { this.endTest(20); },
           result: QuestionResult.GOOD
         }
-      ]
+      ],
+      good: 'Félicitation!!! Même si Balthazar semble gentil et pourrait être ton ami tu ne le connais pas. Il est primordial de ne jamais accepter de rendez-vous avec des gens que tu rencontres sur Internet sans en parler avec tes parents ou des adultes en qui tu as confiance.',
+      bad: 'Tu n\’as pas répondu correctement à la question. Essaie de nouveau tu es capable!'
     }
   ];
 
@@ -636,7 +679,7 @@ class App extends React.Component<App.Props, App.State> {
     };
   }
 
-  showOverlay(result: QuestionResult, action: Function) {
+  showOverlay(result: QuestionResult, action: Function, text: Array<string>) {
     switch (result) {
       case QuestionResult.BAD: {
         this.setState({
@@ -644,7 +687,7 @@ class App extends React.Component<App.Props, App.State> {
             visible: true,
             image: duoCloseHexagon,
             title: 'Mauvaise réponse 😞',
-            text: 'Tu n\'as pas répondu correctement a la question. Tu n\'as pas répondu correctement a la question. Tu n\'as pas répondu correctement a la question.',
+            text: text[0],
             ok: () => { this.hideOverlay(); }
           }
         });
@@ -656,7 +699,7 @@ class App extends React.Component<App.Props, App.State> {
             visible: true,
             image: duoCheckHexagon,
             title: 'Bravo 🎉',
-            text: 'Tu a bien répondu a la question. Tu a bien répondu a la question. Tu a bien répondu a la question. Tu a bien répondu a la question.',
+            text: text[1],
             ok: () => { this.hideOverlay(); action(); }
           }
         });
@@ -709,6 +752,8 @@ class App extends React.Component<App.Props, App.State> {
   }
 
   reset() {
+    this.resetQuestions();
+
     this.setState({
       start: {
         text: 'Aidez Jhonny!',
@@ -731,6 +776,13 @@ class App extends React.Component<App.Props, App.State> {
     });
   }
 
+  resetQuestions() {
+    this.questions.forEach(question => {
+      question.answered = false;
+      question.visible = false;
+    });
+  }
+
   render() {
     return (
       <div className='app'>
@@ -743,7 +795,7 @@ class App extends React.Component<App.Props, App.State> {
                 <img className='logo' src={duoStandingDesk} />
               </h2>
               <h3 className='welcome-subtitle'>À la rescousse de Balthazar! 😨</h3>
-              <h4 className='welcome-text'>Cher élève de la classe de Madame X je me nomme Balthazar et j’ai grandement besoin de votre aide. J’ai été un peu trop téméraire et j’ai décider de me lance dans les Internet sans vraiment avoir de connaissances sur le sujet. Au travers les médias sociaux, les moteurs de recherche ainsi que dans les jeux en ligne je me suis égaré. N’ayant pas été prudent je crains que je sois prisonnier de ces technologies. Si seulement j’avais des amis qui pourraient m’aider à réparer mes erreurs pour que je puisse sortir de cet endroit. J’aimerais tant pouvoir revoir mes parents et mon chien Loki. Pshhhhhhhhhh… ohhh non les interférences !!! pshhhhhhhh… Aidez-moi svp. Je serai bien vous récompensez afin que vous ne soyez pas dans la même situation que moi. Pshhhhh adieu classe de Madame X que les « likes » soient avec vous.</h4>
+              <h4 className='welcome-text'>Cher élève de la classe de Madame X, je me nomme Balthazar et j’ai grandement besoin de votre aide. J’ai été un peu trop téméraire et j’ai décidé de me lancer dans les Internet sans vraiment avoir de connaissances sur le sujet. Au travers les médias sociaux, les moteurs de recherche ainsi que les jeux en ligne, je me suis égaré. N’ayant pas été prudent, je crains que je sois prisonnier de ces technologies. Si seulement j’avais des amis qui pourraient m’aider à réparer mes erreurs pour que je puisse sortir de cet endroit… J’aimerais tant pouvoir revoir mes parents et mon chien Loki! Pshhhhhhhhhh… ohhh non… les interférences!!! pshhhhhhhh… Aidez-moi s.v.p!! Je saurai bien vous récompensez afin que vous ne soyez pas dans la même situation que moi. Pshhhhh… adieu classe de Madame X, que les « likes » soient avec vous.</h4>
               <Button
                 text={this.state.start.text}
                 state={this.state.start.status}
@@ -762,7 +814,7 @@ class App extends React.Component<App.Props, App.State> {
                 </div>
                 <div className='question-buttons'>
                   {question.answers.map((answer) =>
-                    <Button key={answer.id} text={answer.text} state={IButtonState.default} action={() => this.showOverlay(answer.result, answer.action)} />
+                    <Button key={answer.id} text={answer.text} state={IButtonState.default} action={() => this.showOverlay(answer.result, answer.action, [question.bad, question.good])} />
                   )}
                 </div>
                 <p className='page-count'>{question.id}/{this.state.questions.length}</p>
