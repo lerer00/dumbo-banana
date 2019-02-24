@@ -133,18 +133,18 @@ body {
     transition: all 1.4s;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.8s;
-  }
+}
 
-.overlay .overlay-inner{
+.overlay .overlay-inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,7 +159,7 @@ body {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.overlay .overlay-inner .overlay-image img{
+.overlay .overlay-inner .overlay-image img {
     display: block;
     margin: auto;
     height: 100px;
@@ -198,16 +198,37 @@ body {
 
 @media only screen and (min-width: 719px) and (max-width: 1024px) {
     .welcome-inner {
-        width: 80%;
+        width: 90%;
     }
     .welcome-title {
         font-size: 11em;
+    }
+    .welcome-title .logo {
+        width: 50%;
     }
     .welcome-subtitle {
         font-size: 0.8em;
     }
     .welcome-text {
+        width: 100%;
+    }
+    .question-inner {
+        width: 85%;
+    }
+    .question-inner .question-text-container p {
+        font-size: 1.3em;
+    }
+    .overlay .overlay-inner .overlay-image img {
+        height: 100px;
+    }
+    .overlay .overlay-inner {
         width: 70%;
+    }
+    .button {
+        text-align: left;
+    }
+    .button .button-text {
+        font-size: 0.75em;
     }
 }
 
@@ -246,90 +267,11 @@ body {
     }
 }
 
-.white-division {
-    background-color: #FFFFFF;
-    text-align: center;
-}
-
-.memphis-division {
-    background-repeat: repeat;
-    background-size: 240px 240px;
-    background-image: url("./img/memphis.jpg");
-    padding: 40px 0;
-}
-
-.blue-gradient-division {
-    background-image: linear-gradient(to bottom, #00c6fb 0%, #0665d0 100%);
-    background-size: cover;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
-}
-
-.blue-division {
-    background-color: #0665d0;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
-}
-
-.dashed-division {
-    background-repeat: repeat;
-    background-size: 150px 150px;
-    background-image: url("./img/light_wool.png");
-    text-align: center;
-}
-
-.centered-division {
-    width: 960px;
-    margin: auto;
-    padding: 40px 0;
-    display: block;
-}
-
-.container {
-    width: 96%;
-    max-width: initial;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
     grid-auto-rows: minmax(100px, auto);
-}
-
-.deployed-network {
-    position: relative;
-    border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.90);
-    padding: 16px 0;
-}
-
-.deployed-network .network-identifier {
-    position: relative;
-    font-size: 1.4em;
-    text-align: center;
-    color: #a7a7a7;
-}
-
-.deployed-network .network-identifier .network-color {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 8px 8px 32px;
-    background-color: rgb(235, 179, 63);
-    vertical-align: middle;
-}
-
-.deployed-network .network-identifier .network-sigle {
-    font-family: 'CircularStdBlack', sans-serif;
-    position: relative;
-    display: inline-block;
-    font-size: 2em;
-}
-
-.row {
-    margin: 48px auto;
 }
 
 .title {
@@ -342,185 +284,12 @@ body {
     font-weight: 700;
 }
 
-.title-2 {
-    font-family: 'CircularStdBlack', sans-serif;
-    position: relative;
-    display: table;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.title-3 {
-    font-family: 'CircularStdBlack', sans-serif;
-    display: table;
-    margin: auto;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -1px;
-    font-weight: 700;
-}
-
-.description {
-    color: #A7A7A7;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-.description-left {
-    text-align: left;
-}
-
-.description-center {
-    text-align: center;
-}
-
-.on-dark {
-    color: #FFFFFF;
-}
-
-.on-dark-icon {
-    border-radius: 10px;
-    background-color: #FFFFFF;
-}
-
-.on-light {
-    color: #212529;
-}
-
 .icon {
     padding: 24px;
     width: 100px;
 }
 
-.line-separated:after {
-    margin: 24px auto;
-    content: ' ';
-    display: block;
-    width: 120px;
-    border: 0.5px solid #C0C0C0;
-}
-
-.overview {
-    padding: 64px 0 88px 0;
-}
-
-.overview .grid .illustration {
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
-}
-
-.overview .grid .illustration img {
-    width: 100%;
-}
-
-.overview .grid .illustration .fire1 {
-    width: 20%;
-    margin-right: -30px;
-}
-
-.overview .grid .illustration .fire2 {
-    width: 30%;
-    margin-right: -55px;
-}
-
-.overview .grid .illustration .fire3 {
-    width: 60%;
-}
-
-.overview .grid .content {
-    grid-column: 2/4;
-}
-
-.overview .grid .content .description {
-    padding: 20px;
-}
-
-.modules .module-icon {
-    padding: 16px;
-    width: 64px;
-}
-
-.modules .button {
-    margin: 8px 0 0 0;
-}
-
-.timeline .line-division {
-    position: relative;
-}
-
-.timeline .line-division-after {
-    position: relative;
-}
-
-.timeline .line-division-after::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    content: ' ';
-    width: 50%;
-    height: 200%;
-    border-right: solid #0665D0 2px;
-}
-
-.timeline .line-division::after {
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    left: 50%;
-    content: ' ';
-    width: 50px;
-    height: 60px;
-    border-radius: 3px;
-    background-color: #FFFFFF;
-    transform: translate(-50%, -50%);
-}
-
-.timeline .line-event {
-    position: relative;
-    z-index: 200;
-}
-
-.timeline .line-event .icon {
-    width: 36px;
-}
-
-.help .form, .subscription .form {
-    border-radius: 3px;
-    margin: 36px auto 0 auto;
-    padding: 6px;
-    background-color: #ffffff;
-    border: solid 1px #f4f4f4;
-    width: 90%;
-    box-shadow: 0 2px 3px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
-}
-
-.help .form input, .subscription .form input {
-    padding: 0 8px;
-    margin-right: 8px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    display: inline-block;
-    height: 32px;
-    width: 60%;
-}
-
-.help .form .button, .subscription .form .button {
-    width: 33%;
-    float: right;
-    margin: 0;
-}
-
-.footer .centered-division {
-    padding: 16px 0;
-}
-
-@media only screen and (min-width: 719px) and (max-width: 1024px) {
+/* @media only screen and (min-width: 719px) and (max-width: 1024px) {
     .centered-division {
         width: 100%;
     }
@@ -787,4 +556,4 @@ body {
     .help img {
         margin-top: 24px;
     }
-}
+} */
