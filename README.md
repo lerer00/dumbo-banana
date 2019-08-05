@@ -1,6 +1,6 @@
-# 🐙 latude web app
+# 🍌 dumbo-banana
 
-Bolts and nuts of the whole latude project. From ethereum contracts to our custom only travel agency platform.
+Form-like application that was intended to help childrens learn about the "internet". 
 
 ### How to Contribute
 
